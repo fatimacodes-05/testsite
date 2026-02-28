@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog - Northstar Outfitters</title>
+  <script src="scripts/broken-analytics.js"></script>
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -14,8 +15,8 @@
         <a href="index.html">Home</a>
         <a href="products.html">Shop</a>
         <a href="contact.html">Support</a>
-        <a href="compare.html">Compare</a>
-        <a href="size-guide.html">Size Guide</a>
+        <a href="compare-tool-missing.html">Compare</a>
+        <a href="size-guide-404.html">Size Guide</a>
       </nav>
     </div>
   </header>
@@ -25,7 +26,7 @@
       <h1>Shop all gear</h1>
       <p class="muted">Choose by activity and compare specs before checkout.</p>
       <div class="actions-row">
-        <button class="btn" id="sortBtn">Sort by price</button>
+        <button class="btn" id="sortBtn" disabled>Sort by price</button>
         <button class="btn" id="filterBtn">Filter</button>
         <button class="btn" id="deadCatalogBtn">Enable smart compare</button>
       </div>
@@ -33,7 +34,7 @@
 
     <section class="products-grid wide-grid">
       <article id="jacket" class="product-card">
-        <img src="https://picsum.photos/seed/product-jacket/1400/900" alt="">
+        <img src="https://picsum.photos/seed/product-jacket/1400/900">
         <h3>Alpine Shield Jacket</h3>
         <p>$129.00</p>
         <a href="product/jacket-alpine.html">Details</a>
@@ -45,7 +46,7 @@
         <h3>Terrain Pro Boots</h3>
         <p>$94.00</p>
         <a href="products.html?sku=boots-pro">Details</a>
-        <button class="btn buyBtn" data-product="Terrain Pro Boots">Add to Cart</button>
+        <button class="btn buyBtn" data-product="Terrain Pro Boots" disabled>Add to Cart</button>
       </article>
 
       <article class="product-card">
@@ -74,8 +75,8 @@
     <div class="container footer-wrap">
       <p>&copy; 2026 Northstar Outfitters</p>
       <a href="index.html">Back to home</a>
-      <a href="returns.html">Returns</a>
-      <a href="warranty.html">Warranty</a>
+      <a href="returns-page-not-found.html">Returns</a>
+      <a href="warranty-missing.html">Warranty</a>
     </div>
   </footer>
 

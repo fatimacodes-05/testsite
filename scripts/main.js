@@ -1,7 +1,7 @@
 const shopNowBtn = document.getElementById("shopNowBtn");
 if (shopNowBtn) {
     shopNowBtn.addEventListener("click", () => {
-        window.location.href = "products.html";
+        window.location.href = "products-catalog-missing.html";
     });
 }
 
@@ -14,7 +14,7 @@ buyButtons.forEach((btn) => {
 });
 
 const learnMoreBtn = document.getElementById("learnMoreBtn");
-if (learnMoreBtn) {
+if (learnMoreBtn && !learnMoreBtn.disabled) {
     learnMoreBtn.addEventListener("click", () => {
         window.location.href = "#";
     });
@@ -77,4 +77,11 @@ if (sku) {
     skuTag.className = "panel danger";
     skuTag.innerHTML = "Selected SKU: " + sku;
     document.body.prepend(skuTag);
+}
+
+// Intentional error that fires on pages with forms
+if (document.querySelector("form")) {
+    setTimeout(() => {
+        undefinedFormFunction();
+    }, 100);
 }

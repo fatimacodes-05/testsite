@@ -124,6 +124,16 @@ h4 {
 	cursor: pointer;
 }
 
+.btn:disabled,
+button:disabled,
+input:disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+	background: #e8eef5;
+	color: #8a95b0;
+	border-color: #cdd9ea;
+}
+
 .btn-primary {
 	background: linear-gradient(135deg, #ff7a18 0%, #ff4d6d 100%);
 	border-color: #df3f60;
