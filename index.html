@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Northstar Outfitters - Home</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js"></script>
+  <script src="scripts/legacy-analytics.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">Northstar Outfitters</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="contact.html">Support</a>
+        <a href="about.html">About Us</a>
+        <a href="sale.html">Seasonal Sale</a>
+        <a href="blog.html">Stories</a>
+        <a href="faq.html">FAQs</a>
+        <a href="javascript:void(0)">Track Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-card">
+      <div>
+        <h1>Gear for city runs, weekend trails, and long-haul travel.</h1>
+        <p>Reliable outdoor essentials built to survive rough weather and daily use.</p>
+        <div class="actions-row">
+          <button id="shopNowBtn" class="btn btn-primary">Shop New Arrivals</button>
+          <button id="learnMoreBtn" class="btn btn-secondary">Learn More</button>
+          <button id="deadHeroBtn" class="btn btn-secondary">Compare Kits</button>
+        </div>
+      </div>
+      <img src="https://picsum.photos/seed/hero-outdoor/1800/1100" class="hero-image">
+    </section>
+
+    <section>
+      <h2>Featured gear</h2>
+      <div class="products-grid wide-grid">
+        <div class="product-card">
+          <img src="https://picsum.photos/seed/jacket/1400/900" alt="Insulated alpine jacket in storm gray">
+          <h3>Alpine Shield Jacket</h3>
+          <p>$129.00</p>
+          <a href="products.html#jacket" class="text-link">View details</a>
+          <button class="btn buyBtn" data-product="Alpine Shield Jacket">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://picsum.photos/seed/boots/1400/900" alt="Terrain boots with reinforced sole">
+          <h3>Terrain Pro Boots</h3>
+          <p>$94.00</p>
+          <a href="products.html#boots" class="text-link">View details</a>
+          <button class="btn buyBtn" data-product="Terrain Pro Boots">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://picsum.photos/seed/backpack/1400/900" alt="48 liter trail backpack with rain cover">
+          <h3>Summit 48 Backpack</h3>
+          <p>$109.00</p>
+          <a href="ghost-product.html" class="text-link">View details</a>
+          <button class="btn buyBtn" data-product="Summit 48 Backpack">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="split">
+      <article class="panel">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="products.html">All products</a></li>
+          <li><a href="contact.html">Returns policy</a></li>
+          <li><a href="shipping.html">Shipping zones</a></li>
+          <li><a href="https://example.com/partners" target="_blank">Brand partners</a></li>
+        </ul>
+      </article>
+      <article class="panel compact-panel">
+        <h4>Flash signup</h4>
+        <form id="newsletterForm" action="http://example.com/newsletter" method="get">
+          <input type="email" id="newsletterEmail" name="email" placeholder="Your email">
+          <button class="btn" id="newsletterBtn">Join list</button>
+          <button class="btn" type="button" id="fakeCouponBtn">Apply coupon</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Inventory alert</h2>
+      <form id="inventoryForm">
+        <label for="itemCode">Item code</label>
+        <input id="itemCode" name="itemCode" placeholder="ex: NS-1488">
+        <label for="mobile">Mobile number</label>
+        <input id="mobile" name="mobile" placeholder="+1">
+        <button class="btn" type="submit">Notify me</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Northstar Outfitters</p>
+      <a href="terms.html">Terms</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="contact.html#store-locator">Store Locator</a>
+      <a href="#">Sitemap</a>
+    </div>
+  </footer>
+</body>
+</html>

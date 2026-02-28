@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog - Northstar Outfitters</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">Northstar Outfitters</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="contact.html">Support</a>
+        <a href="compare.html">Compare</a>
+        <a href="size-guide.html">Size Guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="catalog-head">
+      <h1>Shop all gear</h1>
+      <p class="muted">Choose by activity and compare specs before checkout.</p>
+      <div class="actions-row">
+        <button class="btn" id="sortBtn">Sort by price</button>
+        <button class="btn" id="filterBtn">Filter</button>
+        <button class="btn" id="deadCatalogBtn">Enable smart compare</button>
+      </div>
+    </section>
+
+    <section class="products-grid wide-grid">
+      <article id="jacket" class="product-card">
+        <img src="https://picsum.photos/seed/product-jacket/1400/900" alt="">
+        <h3>Alpine Shield Jacket</h3>
+        <p>$129.00</p>
+        <a href="product/jacket-alpine.html">Details</a>
+        <button class="btn buyBtn" data-product="Alpine Shield Jacket">Add to Cart</button>
+      </article>
+
+      <article id="boots" class="product-card">
+        <img src="https://picsum.photos/seed/product-boots/1400/900">
+        <h3>Terrain Pro Boots</h3>
+        <p>$94.00</p>
+        <a href="products.html?sku=boots-pro">Details</a>
+        <button class="btn buyBtn" data-product="Terrain Pro Boots">Add to Cart</button>
+      </article>
+
+      <article class="product-card">
+        <img src="https://picsum.photos/seed/product-pack/1400/900" alt="Summit backpack">
+        <h3>Summit 48 Backpack</h3>
+        <p>$109.00</p>
+        <a href="nonexistent-product-page.html">Details</a>
+        <button class="btn buyBtn" data-product="Summit 48 Backpack">Add to Cart</button>
+      </article>
+    </section>
+
+    <section class="panel compact-panel">
+      <h3>Quick compare form</h3>
+      <form id="compareForm" action="results.html" method="post">
+        <label for="productA">Product A</label>
+        <input id="productA" name="productA" placeholder="SKU">
+        <input id="productB" name="productB" placeholder="SKU">
+        <button class="btn" id="compareBtn">Run compare</button>
+      </form>
+      <p class="tiny-note">Want technical PDFs? <a href="docs/specs-2026.pdf">Download pack</a></p>
+      <p class="tiny-note"><a href="http://northstar-outfitters.example/status">Live status page</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 Northstar Outfitters</p>
+      <a href="index.html">Back to home</a>
+      <a href="returns.html">Returns</a>
+      <a href="warranty.html">Warranty</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
