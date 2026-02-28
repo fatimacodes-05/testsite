@@ -17,11 +17,11 @@
         <a href="index.html">Home</a>
         <a href="products.html">Shop</a>
         <a href="contact.html">Support</a>
-        <a href="about-us-page-not-found.html">About Us</a>
-        <a href="sale-404.html">Seasonal Sale</a>
-        <a href="blog-missing.html">Stories</a>
-        <a href="faq-broken.html">FAQs</a>
-        <a href="javascript:void(0)">Track Order</a>
+        <a href="nav-fail-about.html">About Us</a>
+        <a href="nav-fail-sale.html">Seasonal Sale</a>
+        <a href="nav-fail-stories.html">Stories</a>
+        <a href="nav-fail-faq.html">FAQs</a>
+        <a href="nav-fail-track-order.html">Track Order</a>
       </nav>
     </div>
   </header>
@@ -32,9 +32,9 @@
         <h1>Gear for city runs, weekend trails, and long-haul travel.</h1>
         <p>Reliable outdoor essentials built to survive rough weather and daily use.</p>
         <div class="actions-row">
-          <button id="shopNowBtn" class="btn btn-primary">Shop New Arrivals</button>
+          <button id="shopNowBtn" class="btn btn-primary" disabled>Shop New Arrivals</button>
           <button id="learnMoreBtn" class="btn btn-secondary" disabled>Learn More</button>
-          <button id="deadHeroBtn" class="btn btn-secondary">Compare Kits</button>
+          <button id="deadHeroBtn" class="btn btn-secondary" disabled>Compare Kits</button>
         </div>
       </div>
       <img src="https://picsum.photos/seed/hero-outdoor/1800/1100" class="hero-image">
@@ -48,7 +48,7 @@
           <h3>Alpine Shield Jacket</h3>
           <p>$129.00</p>
           <a href="products.html#jacket" class="text-link">View details</a>
-          <button class="btn buyBtn" data-product="Alpine Shield Jacket">Add to Cart</button>
+          <button class="btn buyBtn" data-product="Alpine Shield Jacket" disabled>Add to Cart</button>
         </div>
         <div class="product-card">
           <img src="https://picsum.photos/seed/boots/1400/900">
@@ -62,7 +62,7 @@
           <h3>Summit 48 Backpack</h3>
           <p>$109.00</p>
           <a href="ghost-product.html" class="text-link">View details</a>
-          <button class="btn buyBtn" data-product="Summit 48 Backpack">Add to Cart</button>
+          <button class="btn buyBtn" data-product="Summit 48 Backpack" disabled>Add to Cart</button>
         </div>
       </div>
     </section>
@@ -79,23 +79,23 @@
       </article>
       <article class="panel compact-panel">
         <h4>Flash signup</h4>
-        <form id="newsletterForm" action="http://example.com/newsletter" method="get">
+        <div id="newsletterForm" role="form">
           <input type="email" id="newsletterEmail" name="email" placeholder="Your email" disabled>
           <button class="btn" id="newsletterBtn" disabled>Join list</button>
-          <button class="btn" type="button" id="fakeCouponBtn">Apply coupon</button>
-        </form>
+          <button class="btn" type="button" id="fakeCouponBtn" disabled>Apply coupon</button>
+        </div>
       </article>
     </section>
 
     <section class="panel">
       <h2>Inventory alert</h2>
-      <form id="inventoryForm">
+      <div id="inventoryForm" role="form">
         <label for="itemCode">Item code</label>
         <input id="itemCode" name="itemCode" placeholder="ex: NS-1488">
         <label for="mobile">Mobile number</label>
         <input id="mobile" name="mobile" placeholder="+1">
-        <button class="btn" type="submit">Notify me</button>
-      </form>
+        <button class="btn" type="submit" disabled>Notify me</button>
+      </div>
     </section>
   </main>
 

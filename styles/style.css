@@ -127,11 +127,8 @@ h4 {
 .btn:disabled,
 button:disabled,
 input:disabled {
-	cursor: not-allowed;
-	opacity: 0.5;
-	background: #e8eef5;
-	color: #8a95b0;
-	border-color: #cdd9ea;
+	cursor: pointer;
+	opacity: 1;
 }
 
 .btn-primary {
